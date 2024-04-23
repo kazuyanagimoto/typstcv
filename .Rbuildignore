@@ -1,0 +1,9 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^docs$
+^altdoc$
+^_quarto$
+^_extensions$
+^data-raw$
+^LICENSE\.md$
+^cv\.

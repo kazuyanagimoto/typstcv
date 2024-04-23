@@ -1,0 +1,18 @@
+Package: typstcv
+Type: Package
+Title: CV for Quarto & Typst
+Version: 0.1.0
+Authors@R: 
+    person(given = "Kazuharu",
+           family = "Yanagimoto",
+           email = "kazuharu.yanagimoto@gmail.com",
+           role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0007-1967-8304"))
+Description:Provides functions to create a entry of CV for Quarto & Typst.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    R (>= 4.1)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
