@@ -1,0 +1,194 @@
+[
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2024 typstcv authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "crumbs": [
+      "License"
+    ]
+  },
+  {
+    "objectID": "man/work.html",
+    "href": "man/work.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Work experience\n\n\n\nwork\n\n\n\n\n\nA dataframe of work experience\n\n\ntitle\n\n\nJob title\n\n\nlocation\n\n\nLocation of job\n\n\ndate\n\n\nDate of employment\n\n\ndescription\n\n\nEmployer\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "work"
+    ]
+  },
+  {
+    "objectID": "man/work.html#example-data-work-experience",
+    "href": "man/work.html#example-data-work-experience",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Work experience\n\n\n\nwork\n\n\n\n\n\nA dataframe of work experience\n\n\ntitle\n\n\nJob title\n\n\nlocation\n\n\nLocation of job\n\n\ndate\n\n\nDate of employment\n\n\ndescription\n\n\nEmployer\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "work"
+    ]
+  },
+  {
+    "objectID": "man/award.html",
+    "href": "man/award.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Awards\n\n\n\naward\n\n\n\n\n\nA dataframe of awards\n\n\ntitle\n\n\nTitle of award\n\n\nlocation\n\n\nLocation of award\n\n\ndate\n\n\nDate of award\n\n\ndescription\n\n\nDescription of award\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "award"
+    ]
+  },
+  {
+    "objectID": "man/award.html#example-data-awards",
+    "href": "man/award.html#example-data-awards",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Awards\n\n\n\naward\n\n\n\n\n\nA dataframe of awards\n\n\ntitle\n\n\nTitle of award\n\n\nlocation\n\n\nLocation of award\n\n\ndate\n\n\nDate of award\n\n\ndescription\n\n\nDescription of award\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "award"
+    ]
+  },
+  {
+    "objectID": "man/skill.html",
+    "href": "man/skill.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Skills\n\n\n\nskill\n\n\n\n\n\nA dataframe of skills\n\n\ntitle\n\n\nCategory of skill\n\n\ndescription\n\n\nList of skills\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "skill"
+    ]
+  },
+  {
+    "objectID": "man/skill.html#example-data-skills",
+    "href": "man/skill.html#example-data-skills",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Skills\n\n\n\nskill\n\n\n\n\n\nA dataframe of skills\n\n\ntitle\n\n\nCategory of skill\n\n\ndescription\n\n\nList of skills\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "skill"
+    ]
+  },
+  {
+    "objectID": "vignettes/gallery.html",
+    "href": "vignettes/gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "Albert Einstein’s CV\n\n\n\n\n\n\nKazuharu Yanagimoto\n\n\nApr 24, 2024\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Gallery"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "This package provides helper functinons for kazuyanagimoto/quarto-awesomecv-typst. This work are inspired by these three works:\n\nByungjin Park’s Awesome-CV\n\nA beautiful \\(\\LaTeX\\) template of CV\n\nPaul Tsouchlos’s modern-cv\n\nA Typst implementation of Awesome-CV\n\nMitchell O’Hara-Wild and Rob Hyndman’s vitae\n\nR package for modern CV, including Awesome-CV\n\n\n\n\nYou can install the development version of quartomonothemer from R-universe with:\ninstall.packages(\"typstcv\", repos = \"https://kazuyanagimoto.r-universe.dev\")\n\n\n\nYou can find a simple example and qmd code.\n\n\nSet author information in YAML.\nauthor:\n  firstname: Albert\n  lastname: Einstein\n  address: \"Rämistrasse 101, CH-8092 Zürich, Switzerland, Zürich\"\n  positions: [\"Research Physicist\",  \"Professor\"]\n  contacts:\n    - icon: fa envelope\n      text: ae@example.com\n      url: \"mailto:ae@example.com\"\n    - icon: PATH_TO_ICON/icon.svg\n      text: example.com\n      url: https://example.com\n\nfontawesome icons are supported via duskmoon314/typst-fontawesome with fa prefix.\nSVG icons can be used by specifying the path to the icon file\n\n\n\n\nYou can set fonts and the accent color in YAML.\nstyle:\n   color-accent: \"516db0\"\n   font-header: \"Roboto\"\n   font-text: \"Source Sans Pro\"\nformat:\n  awesomecv-typst:\n    font-paths: [\"PATH_TO_FONT\"]\n\n\n\nresume_entry() is a helper function to create resume entryies from a data frame.\ndf_educ |&gt;\n  resume_entry(\n    title = \"title\",\n    location = \"location\",\n    date = \"year\",\n    description = \"detail\"\n)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#installation",
+    "href": "index.html#installation",
+    "title": "typstcv",
+    "section": "",
+    "text": "You can install the development version of quartomonothemer from R-universe with:\ninstall.packages(\"typstcv\", repos = \"https://kazuyanagimoto.r-universe.dev\")",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "typstcv",
+    "section": "",
+    "text": "You can find a simple example and qmd code.\n\n\nSet author information in YAML.\nauthor:\n  firstname: Albert\n  lastname: Einstein\n  address: \"Rämistrasse 101, CH-8092 Zürich, Switzerland, Zürich\"\n  positions: [\"Research Physicist\",  \"Professor\"]\n  contacts:\n    - icon: fa envelope\n      text: ae@example.com\n      url: \"mailto:ae@example.com\"\n    - icon: PATH_TO_ICON/icon.svg\n      text: example.com\n      url: https://example.com\n\nfontawesome icons are supported via duskmoon314/typst-fontawesome with fa prefix.\nSVG icons can be used by specifying the path to the icon file\n\n\n\n\nYou can set fonts and the accent color in YAML.\nstyle:\n   color-accent: \"516db0\"\n   font-header: \"Roboto\"\n   font-text: \"Source Sans Pro\"\nformat:\n  awesomecv-typst:\n    font-paths: [\"PATH_TO_FONT\"]\n\n\n\nresume_entry() is a helper function to create resume entryies from a data frame.\ndf_educ |&gt;\n  resume_entry(\n    title = \"title\",\n    location = \"location\",\n    date = \"year\",\n    description = \"detail\"\n)",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "man/resume_entry.html",
+    "href": "man/resume_entry.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Convert a data frame to a resume entry\n\n\n\nresume_entry(\n  data,\n  title = \"title\",\n  location = \"location\",\n  date = \"date\",\n  description = \"description\"\n)\n\n\n\n\n\n\n\ndata\n\n\nA data frame with columns for title, location, date, and description\n\n\n\n\ntitle\n\n\nThe column name for the title. Default is \"title\"\n\n\n\n\nlocation\n\n\nThe column name for the location. Default is \"location\"\n\n\n\n\ndate\n\n\nThe column name for the date. Default is \"date\"\n\n\n\n\ndescription\n\n\nThe column name for the description. Default is \"description\"\n\n\n\n\n\n\nA string with the resume entry\n\n\n\n\nlibrary(typstcv)\n\neduc &lt;- data.frame(\n title = c(\"Ph.D. in Physics\", \"Master of Science\"),\n location = c(\"Zürich, Switzerland\", \"Zürich, Switzerland\"),\n date = c(\"1905\", \"1896 - 1900\"),\n description = c(\"University of Zürich\", \"ETH\")\n)\n\nresume_entry(educ)\n\n```{=typst}\n#resume-entry(title: \"Ph.D. in Physics\",location: \"Zürich, Switzerland\",date: \"1905\",description: \"University of Zürich\",)\n#resume-entry(title: \"Master of Science\",location: \"Zürich, Switzerland\",date: \"1896 - 1900\",description: \"ETH\",)\n```",
+    "crumbs": [
+      "Reference",
+      "resume_entry"
+    ]
+  },
+  {
+    "objectID": "man/resume_entry.html#convert-a-data-frame-to-a-resume-entry",
+    "href": "man/resume_entry.html#convert-a-data-frame-to-a-resume-entry",
+    "title": "typstcv",
+    "section": "",
+    "text": "Convert a data frame to a resume entry\n\n\n\nresume_entry(\n  data,\n  title = \"title\",\n  location = \"location\",\n  date = \"date\",\n  description = \"description\"\n)\n\n\n\n\n\n\n\ndata\n\n\nA data frame with columns for title, location, date, and description\n\n\n\n\ntitle\n\n\nThe column name for the title. Default is \"title\"\n\n\n\n\nlocation\n\n\nThe column name for the location. Default is \"location\"\n\n\n\n\ndate\n\n\nThe column name for the date. Default is \"date\"\n\n\n\n\ndescription\n\n\nThe column name for the description. Default is \"description\"\n\n\n\n\n\n\nA string with the resume entry\n\n\n\n\nlibrary(typstcv)\n\neduc &lt;- data.frame(\n title = c(\"Ph.D. in Physics\", \"Master of Science\"),\n location = c(\"Zürich, Switzerland\", \"Zürich, Switzerland\"),\n date = c(\"1905\", \"1896 - 1900\"),\n description = c(\"University of Zürich\", \"ETH\")\n)\n\nresume_entry(educ)\n\n```{=typst}\n#resume-entry(title: \"Ph.D. in Physics\",location: \"Zürich, Switzerland\",date: \"1905\",description: \"University of Zürich\",)\n#resume-entry(title: \"Master of Science\",location: \"Zürich, Switzerland\",date: \"1896 - 1900\",description: \"ETH\",)\n```",
+    "crumbs": [
+      "Reference",
+      "resume_entry"
+    ]
+  },
+  {
+    "objectID": "man/pub.html",
+    "href": "man/pub.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Publications\n\n\n\npub\n\n\n\n\n\nA dataframe of publications\n\n\ntitle\n\n\nTitle of publication\n\n\nlocation\n\n\nJournal\n\n\ndate\n\n\nDate of publication\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "pub"
+    ]
+  },
+  {
+    "objectID": "man/pub.html#example-data-publications",
+    "href": "man/pub.html#example-data-publications",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Publications\n\n\n\npub\n\n\n\n\n\nA dataframe of publications\n\n\ntitle\n\n\nTitle of publication\n\n\nlocation\n\n\nJournal\n\n\ndate\n\n\nDate of publication\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "pub"
+    ]
+  },
+  {
+    "objectID": "man/educ.html",
+    "href": "man/educ.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Education\n\n\n\neduc\n\n\n\n\n\nA dataframe of educational history\n\n\ntitle\n\n\nDegree title\n\n\nlocation\n\n\nLocation of institution\n\n\ndate\n\n\nDate of degree\n\n\ndescription\n\n\nInstitution\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "educ"
+    ]
+  },
+  {
+    "objectID": "man/educ.html#example-data-education",
+    "href": "man/educ.html#example-data-education",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Education\n\n\n\neduc\n\n\n\n\n\nA dataframe of educational history\n\n\ntitle\n\n\nDegree title\n\n\nlocation\n\n\nLocation of institution\n\n\ndate\n\n\nDate of degree\n\n\ndescription\n\n\nInstitution\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "educ"
+    ]
+  },
+  {
+    "objectID": "CITATION.html",
+    "href": "CITATION.html",
+    "title": "Citation",
+    "section": "",
+    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\n  Yanagimoto K (????). _typstcv: CV for Quarto & Typst_. R package\n  version 0.0.0.9000, https://kazuyanagimoto/typst-cv/,\n  &lt;https://github.com/kazuyanagimoto/typst-cv&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {typstcv: CV for Quarto & Typst},\n    author = {Kazuharu Yanagimoto},\n    note = {R package version 0.0.0.9000, \nhttps://kazuyanagimoto/typst-cv/},\n    url = {https://github.com/kazuyanagimoto/typst-cv},\n  }",
+    "crumbs": [
+      "Citation"
+    ]
+  }
+]
