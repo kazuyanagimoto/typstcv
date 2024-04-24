@@ -6,4 +6,8 @@
 ^_extensions$
 ^data-raw$
 ^LICENSE\.md$
-^cv\.
+^vignettes$
+^\.github$
+^README\.qmd$
+^README\.html$
+README_files/*

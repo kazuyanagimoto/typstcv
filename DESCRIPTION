@@ -1,7 +1,7 @@
 Package: typstcv
 Type: Package
 Title: CV for Quarto & Typst
-Version: 0.1.0
+Version: 0.0.0.9000
 Authors@R: 
     person(given = "Kazuharu",
            family = "Yanagimoto",
@@ -12,6 +12,8 @@ Description:Provides functions to create a entry of CV for Quarto & Typst.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/kazuyanagimoto/typstcv,
+    https://kazuyanagimoto/typstcv/
 Depends: 
     R (>= 4.1)
 Roxygen: list(markdown = TRUE)

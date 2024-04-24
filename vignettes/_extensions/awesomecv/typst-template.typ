@@ -8,8 +8,8 @@
 #let color-accent-default = rgb("#dc3522")
 
 // Default fonts
-#let font-header-default = "Roboto"
-#let font-text-default = "Source Sans Pro"
+#let font-header-default = ("Roboto", "Arial", "Helvetica", "Dejavu Sans")
+#let font-text-default = ("Source Sans Pro", "Arial", "Helvetica", "Dejavu Sans")
 
 /// Helpers
 
@@ -137,8 +137,9 @@
     color-accent = rgb(style.color-accent)
   }
   let font-header = font-header-default
-  if "" in style.keys() {
-    font-header = style.font-header
+  if "font-header" in style.keys() {
+    // font-header = style.font-header
+    font-header = sans
   }
   let font-text = font-text-default
   if "font-text" in style.keys() {

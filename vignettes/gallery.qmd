@@ -1,0 +1,18 @@
+---
+title: "Gallery"
+listing:
+  contents:
+    - title: Albert Einstein's CV
+      author: Kazuharu Yanagimoto
+      date: today
+      image: typstcv.svg
+      path: typstcv.qmd
+  sort: "date desc"
+  type: grid
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+{{< fa this-is-placeholder-for-fa >}}
