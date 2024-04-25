@@ -5,8 +5,8 @@ listing:
     - title: Albert Einstein's CV
       author: Kazuharu Yanagimoto
       date: today
-      image: typstcv.svg
-      path: typstcv.qmd
+      image: awesomecv/assets/img/thumbnail.svg
+      path: awesomecv/awesomecv.qmd
   sort: "date desc"
   type: grid
   sort-ui: false

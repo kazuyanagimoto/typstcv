@@ -10,7 +10,7 @@
 [![Docs](https://img.shields.io/badge/docs-homepage-blue.svg)](https://kazuyanagimoto.com/typstcv/index.html)
 <!-- badges: end -->
 
-![](vignettes/typstcv.svg)
+![](vignettes/awesomecv/assets/img/thumbnail.svg)
 
 This package provides helper functinons for
 [kazuyanagimoto/quarto-awesomecv-typst](https://github.com/kazuyanagimoto/quarto-awesomecv-typst).
@@ -36,8 +36,9 @@ install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
 ## Usage
 
 You can find a simple
-[example](https://kazuyanagimoto.com/typstcv/vignettes/typstcv.pdf) and
-[qmd](https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/typstcv.qmd)
+[example](https://kazuyanagimoto.com/typstcv/vignettes/awesomecv/awesomecv.pdf)
+and
+[qmd](https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/awesomecv/awesomecv.qmd)
 code.
 
 ### Use Template
@@ -57,7 +58,7 @@ author:
   firstname: Albert
   lastname: Einstein
   address: "Rämistrasse 101, CH-8092 Zürich, Switzerland, Zürich"
-  positions: ["Research Physicist",  "Professor"]
+  position: "Research Physicist・Professor"
   contacts:
     - icon: fa envelope
       text: ae@example.com
