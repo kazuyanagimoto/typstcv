@@ -2,6 +2,14 @@
 
 # typstcv
 
+<!-- badges: start -->
+
+<a href="https://kazuyanagimoto.r-universe.dev"><img src="https://kazuyanagimoto.r-universe.dev/badges/typstcv" class="img-fluid" alt="R-universe status badge"></a>
+[![R-CMD-check](https://github.com/kazuyanagimoto/typstcv/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kazuyanagimoto/typstcv/actions/workflows/R-CMD-check.yaml)
+<a href = "https://github.com/kazuyanagimoto/typstcv/blob/main/LICENSE.md" target = "_blank"><img src="https://img.shields.io/badge/license-MIT-blue"></a>
+[![Docs](https://img.shields.io/badge/docs-homepage-blue.svg)](https://kazuyanagimoto.com/typstcv/index.html)
+<!-- badges: end -->
+
 ![](vignettes/typstcv.svg)
 
 This package provides helper functinons for
@@ -9,7 +17,7 @@ This package provides helper functinons for
 This work are inspired by these three works:
 
 -   Byungjin Park’s [Awesome-CV](https://github.com/posquit0/Awesome-CV)
-    -   A beautiful $\LaTeX$ template of CV
+    -   A beautiful LaTeX template of CV
 -   Paul Tsouchlos’s
     [modern-cv](https://typst.app/universe/package/modern-cv/)
     -   A [Typst](https://typst.app) implementation of Awesome-CV
@@ -19,8 +27,7 @@ This work are inspired by these three works:
 
 ## Installation
 
-You can install the development version of quartomonothemer from
-R-universe with:
+You can install the development version of typstcv from R-universe with:
 
 ``` r
 install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
@@ -28,9 +35,18 @@ install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
 
 ## Usage
 
-You can find a simple [example](vignettes/typstcv.pdf) and
+You can find a simple
+[example](https://kazuyanagimoto.com/typstcv/vignettes/typstcv.pdf) and
 [qmd](https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/typstcv.qmd)
 code.
+
+### Use Template
+
+You can use the template with `quarto` command.
+
+``` bash
+quarto use template kazuyanagimoto/quarto-awesomecv-typst
+```
 
 ### YAML
 

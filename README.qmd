@@ -22,7 +22,7 @@ This package provides helper functinons for [kazuyanagimoto/quarto-awesomecv-typ
 This work are inspired by these three works:
 
 - Byungjin Park's [Awesome-CV](https://github.com/posquit0/Awesome-CV)
-    - A beautiful $\LaTeX$ template of CV
+    - A beautiful LaTeX template of CV
 - Paul Tsouchlos's [modern-cv](https://typst.app/universe/package/modern-cv/)
     - A [Typst](https://typst.app) implementation of Awesome-CV
 - Mitchell O'Hara-Wild and Rob Hyndman's [vitae](https://pkg.mitchelloharawild.com/vitae/)
@@ -38,7 +38,17 @@ install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
 
 ## Usage
 
-You can find a simple [example](vignettes/typstcv.pdf) and [qmd](https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/typstcv.qmd) code.
+You can find a simple [example](https://kazuyanagimoto.com/typstcv/vignettes/typstcv.pdf) and
+[qmd](https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/typstcv.qmd)
+code.
+
+### Use Template
+
+You can use the template with `quarto` command.
+
+```bash
+quarto use template kazuyanagimoto/quarto-awesomecv-typst
+```
 
 ### YAML
 
