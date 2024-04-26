@@ -250,9 +250,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code class="language-R">format_date(
   data,
   start = "start",
-  end = "end",
-  sep = "-",
-  format = "%M %Y",
+  end = NULL,
+  sep = " - ",
+  date_format = "%M %Y",
   colname_date = "date",
   replace_na = "Present",
   sort_by = "none",
@@ -265,7 +265,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <table>
 <tbody><tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_data">data</code>
+<code id="data">data</code>
 </td>
 <td>
 Data frame for resume entry
@@ -273,7 +273,7 @@ Data frame for resume entry
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_start">start</code>
+<code id="start">start</code>
 </td>
 <td>
 Start date column name. Default is "start"
@@ -281,23 +281,23 @@ Start date column name. Default is "start"
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_end">end</code>
+<code id="end">end</code>
 </td>
 <td>
-End date column name. Default is "end"
+Optional. End date column name.
 </td>
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_sep">sep</code>
+<code id="sep">sep</code>
 </td>
 <td>
-Separator between start and end date. Default is "-"
+Separator between start and end date. Default is " - "
 </td>
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_format">format</code>
+<code id="date_format">date_format</code>
 </td>
 <td>
 Date format. Default is "%M %Y"
@@ -305,7 +305,7 @@ Date format. Default is "%M %Y"
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_colname_date">colname_date</code>
+<code id="colname_date">colname_date</code>
 </td>
 <td>
 Name for the generated date column. Default is "date"
@@ -313,7 +313,7 @@ Name for the generated date column. Default is "date"
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_replace_na">replace_na</code>
+<code id="replace_na">replace_na</code>
 </td>
 <td>
 Value to replace NA values. Default is "Present"
@@ -321,7 +321,7 @@ Value to replace NA values. Default is "Present"
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_sort_by">sort_by</code>
+<code id="sort_by">sort_by</code>
 </td>
 <td>
 Sort by "none", "start" or "end". Default is "none"
@@ -329,7 +329,7 @@ Sort by "none", "start" or "end". Default is "none"
 </tr>
 <tr>
 <td style="white-space: nowrap; font-family: monospace; vertical-align: top">
-<code id="format_date_:_decreasing">decreasing</code>
+<code id="decreasing">decreasing</code>
 </td>
 <td>
 Sort in decreasing order. Default is TRUE
@@ -347,13 +347,13 @@ Sort in decreasing order. Default is TRUE
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(typstcv)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>work <span class="sc">|&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">format_date</span>(<span class="at">format =</span> <span class="st">"%Y"</span>, <span class="at">sort_by =</span> <span class="st">"start"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">format_date</span>(<span class="at">end =</span> <span class="st">"end"</span>, <span class="at">date_format =</span> <span class="st">"%Y"</span>, <span class="at">sort_by =</span> <span class="st">"start"</span>) <span class="sc">|&gt;</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">resume_entry</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>```{=typst}
-#resume-entry(title: "Associate Professor",location: "Zürich, Switzerland",date: "1909-1911",description: "University of Zürich",)
-#resume-entry(title: "Junior Professor",location: "Bern, Switzerland",date: "1908-1909",description: "University of Bern",)
-#resume-entry(title: "Technical Assistant",location: "Bern, Switzerland",date: "1902-1908",description: "Federal Patent Office",)
+#resume-entry(title: "Associate Professor",location: "Zürich, Switzerland",date: "1909 - 1911",description: "University of Zürich",)
+#resume-entry(title: "Junior Professor",location: "Bern, Switzerland",date: "1908 - 1909",description: "University of Bern",)
+#resume-entry(title: "Technical Assistant",location: "Bern, Switzerland",date: "1902 - 1908",description: "Federal Patent Office",)
 ```</code></pre>
 </div>
 </div>
