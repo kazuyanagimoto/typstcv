@@ -7,9 +7,9 @@
 format_date(
   data,
   start = "start",
-  end = "end",
-  sep = "-",
-  format = "\%M \%Y",
+  end = NULL,
+  sep = " - ",
+  date_format = "\%M \%Y",
   colname_date = "date",
   replace_na = "Present",
   sort_by = "none",
@@ -21,11 +21,11 @@ format_date(
 
 \item{start}{Start date column name. Default is "start"}
 
-\item{end}{End date column name. Default is "end"}
+\item{end}{Optional. End date column name.}
 
-\item{sep}{Separator between start and end date. Default is "-"}
+\item{sep}{Separator between start and end date. Default is " - "}
 
-\item{format}{Date format. Default is "\%M \%Y"}
+\item{date_format}{Date format. Default is "\%M \%Y"}
 
 \item{colname_date}{Name for the generated date column. Default is "date"}
 
@@ -43,7 +43,7 @@ Data Column Formatter
 }
 \examples{
 work |>
-  format_date(format = "\%Y", sort_by = "start") |>
+  format_date(end = "end", date_format = "\%Y", sort_by = "start") |>
   resume_entry()
 
 }

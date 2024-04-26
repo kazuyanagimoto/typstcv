@@ -2,9 +2,9 @@
 #'
 #' @param data Data frame for resume entry
 #' @param start Start date column name. Default is "start"
-#' @param end End date column name. Default is "end"
-#' @param sep Separator between start and end date. Default is "-"
-#' @param format Date format. Default is "%M %Y"
+#' @param end Optional. End date column name.
+#' @param sep Separator between start and end date. Default is " - "
+#' @param date_format Date format. Default is "%B %Y"
 #' @param colname_date Name for the generated date column. Default is "date"
 #' @param replace_na Value to replace NA values. Default is "Present"
 #' @param sort_by Sort by "none", "start" or "end". Default is "none"
@@ -15,30 +15,41 @@
 #'
 #' @examples
 #' work |>
-#'   format_date(format = "%Y", sort_by = "start") |>
+#'   format_date(end = "end", date_format = "%Y", sort_by = "start") |>
 #'   resume_entry()
 #'
-format_date <- function(data, start = "start", end = "end", sep = "-",
-                        format = "%M %Y",
+
+format_date <- function(data,
+                        start = "start",
+                        end = NULL,
+                        sep = " - ",
+                        date_format = "%B %Y",
                         colname_date = "date",
                         replace_na = "Present",
                         sort_by = "none",
                         decreasing = TRUE) {
-  data[[start]] <- format(data[[start]], format)
-  data[[end]] <- format(data[[end]], format)
 
-  # Replace NA values
+  data[[start]] <- format(data[[start]], date_format)
   data[[start]][is.na(data[[start]])] <- replace_na
-  data[[end]][is.na(data[[end]])] <- replace_na
 
   # Create date column
-  data[[colname_date]] <- paste(data[[start]], data[[end]], sep = sep)
+  if (is.null(end)) {
+    data[[colname_date]] <- data[[start]]
+  } else {
+    data[[end]] <- format(data[[end]], date_format)
+    data[[end]][is.na(data[[end]])] <- replace_na
+    data[[colname_date]] <- paste(data[[start]], data[[end]], sep = sep)
+  }
 
   # Sort
   if (sort_by == "start") {
     data <- data[order(data[[start]], decreasing = decreasing), ]
-  } else if (sort_by == "end") {
+  } else if (sort_by == "end" && !is.null(end)) {
     data <- data[order(data[[end]], decreasing = decreasing), ]
+  } else if (sort_by == "none") {
+    # Do nothing
+  } else {
+    stop("Invalid sort_by value. Use 'none', 'start' or 'end'")
   }
 
   return(data)

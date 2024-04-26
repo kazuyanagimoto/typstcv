@@ -112,7 +112,7 @@ work |>
   format_date(
     start = "date_start",
     end = "date_end",
-    format = "%Y",
+    date_format = "%Y",
     sep = "->",
     sort_by = "start"
   ) |>
