@@ -13,10 +13,11 @@ pub <- data.frame(
 )
 
 work <- data.frame(
-  title = c("Associate Professor", "Junior Professor", "Technical Assistant"),
-  location = c("Zürich, Switzerland", "Bern, Switzerland", "Bern, Switzerland"),
-  date = c("1909 - 1911", "1908 - 1909", "1902 - 1908"),
-  description = c("University of Zürich", "University of Bern", "Federal Patent Office")
+  title = c("Technical Assistant", "Junior Professor", "Associate Professor"),
+  location = c("Bern, Switzerland", "Bern, Switzerland", "Zürich, Switzerland"),
+  start = as.Date(c("1902-01-01", "1908-01-01", "1909-01-01")),
+  end = as.Date(c("1908-01-01", "1909-01-01", "1911-01-01")),
+  description = c("Federal Patent Office", "University of Bern", "University of Zürich")
 )
 
 award <- data.frame(

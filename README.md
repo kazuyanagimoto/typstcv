@@ -94,11 +94,27 @@ format:
 data frame.
 
 ``` r
-df_educ |>
+educ |>
   resume_entry(
     title = "title",
     location = "location",
     date = "year",
     description = "detail"
 )
+```
+
+### Date Formatter
+
+`date_formatter()` is a helper function to format dates in the resume.
+
+``` r
+work |>
+  format_date(
+    start = "date_start",
+    end = "date_end",
+    format = "%Y",
+    sep = "->",
+    sort_by = "start"
+  ) |>
+  resume_entry()
 ```

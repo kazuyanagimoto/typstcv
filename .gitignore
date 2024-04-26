@@ -8,5 +8,4 @@ _quarto/*
 docs/
 *_files/
 README.html
-cv.pdf
-cv.qmd
+*.pdf
