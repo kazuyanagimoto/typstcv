@@ -208,7 +208,7 @@
     "href": "CITATION.html",
     "title": "Citation",
     "section": "",
-    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\n  Yanagimoto K (????). _typstcv: CV for Quarto & Typst_. R package\n  version 0.0.0.9001, https://kazuyanagimoto/typstcv/,\n  &lt;https://github.com/kazuyanagimoto/typstcv&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {typstcv: CV for Quarto & Typst},\n    author = {Kazuharu Yanagimoto},\n    note = {R package version 0.0.0.9001, \nhttps://kazuyanagimoto/typstcv/},\n    url = {https://github.com/kazuyanagimoto/typstcv},\n  }",
+    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\n  Yanagimoto K (????). _typstcv: CV for Quarto & Typst_. R package\n  version 0.0.0.9002, https://kazuyanagimoto/typstcv/,\n  &lt;https://github.com/kazuyanagimoto/typstcv&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {typstcv: CV for Quarto & Typst},\n    author = {Kazuharu Yanagimoto},\n    note = {R package version 0.0.0.9002, \nhttps://kazuyanagimoto/typstcv/},\n    url = {https://github.com/kazuyanagimoto/typstcv},\n  }",
     "crumbs": [
       "Citation"
     ]
