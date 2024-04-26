@@ -9,7 +9,7 @@ format_date(
   start = "start",
   end = NULL,
   sep = " - ",
-  date_format = "\%M \%Y",
+  date_format = "\%b \%Y",
   colname_date = "date",
   replace_na = "Present",
   sort_by = "none",
@@ -25,7 +25,7 @@ format_date(
 
 \item{sep}{Separator between start and end date. Default is " - "}
 
-\item{date_format}{Date format. Default is "\%M \%Y"}
+\item{date_format}{Date format. Default is "\%B \%Y"}
 
 \item{colname_date}{Name for the generated date column. Default is "date"}
 
