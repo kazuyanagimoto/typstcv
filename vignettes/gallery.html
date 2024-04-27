@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-title','listing-author','listing-execute','listing-path','listing-outputHref','listing-image','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-links',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-author","listing-execute","listing-path","listing-outputHref","listing-image","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-links"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -289,33 +289,71 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1714089600000" data-listing-file-modified-sort="1714165191769" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<a href="../vignettes/awesomecv/awesomecv.pdf" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="awesomecv/assets/img/thumbnail.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Albert Einstein’s CV
-</h5>
-<div class="card-text listing-description">
-
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Kazuharu Yanagimoto
-</div>
-<div class="listing-date">
-Apr 26, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="list gallery">
+    
+    <div class="gallery-entry" data-index="0" data-listing-file-modified-sort="1714211689664" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+        <div class="metadata">          
+            <p class="date listing-date"></p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="../vignettes/awesomecv/awesomecv.pdf">Albert Einstein's CV</a></p>
+            
+            <p class="author listing-author">Kazuharu Yanagimoto</p>
+            <p class="description listing-description"></p>
+            <ul class="item-links">
+                
+                    
+                    <li class="item-link">
+                        
+                        <a href="https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/awesomecv/awesomecv.qmd">
+                        
+                            <i class="fa-brands fa-github"></i> Code
+                        </a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+        <div class="thumbnail">
+            
+            <img src="img/typstcv_awesomecv.svg" alt="Albert Einstein's CV" title="Albert Einstein's CV">
+            
+        </div>
+        
+    </div>
+    
+    <div class="gallery-entry" data-index="1">
+        <div class="metadata">          
+            <p class="date listing-date"></p>
+        </div>
+        <div class="body">
+            <p class="title listing-title"><a href="https://kazuyanagimoto.com/cv/cv.pdf">Kazuharu Yanagimoto's CV</a></p>
+            
+            <p class="author listing-author">Kazuharu Yanagimoto</p>
+            <p class="description listing-description"></p>
+            <ul class="item-links">
+                
+                    
+                    <li class="item-link">
+                        
+                        <a href="https://github.com/kazuyanagimoto/cv">
+                        
+                            <i class="fa-brands fa-github"></i> Code
+                        </a>
+                    </li>
+                    
+                
+            </ul>
+        </div>
+        <div class="thumbnail">
+            
+            <img src="img/cv_yanagimoto.svg" alt="Kazuharu Yanagimoto's CV" title="Kazuharu Yanagimoto's CV">
+            
+        </div>
+        
+    </div>
+    
 </div>
 <div class="listing-no-matching d-none">
 No matching items
