@@ -10,7 +10,7 @@
 [![Docs](https://img.shields.io/badge/docs-homepage-blue.svg)](https://kazuyanagimoto.com/typstcv/index.html)
 <!-- badges: end -->
 
-![](vignettes/awesomecv/assets/img/thumbnail.svg)
+![](vignettes/img/typstcv_awesomecv.svg)
 
 This package provides helper functinons for
 [kazuyanagimoto/quarto-awesomecv-typst](https://github.com/kazuyanagimoto/quarto-awesomecv-typst).

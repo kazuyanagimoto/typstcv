@@ -2,11 +2,22 @@
 title: "Gallery"
 listing:
   contents:
-    - title: Albert Einstein's CV
-      author: Kazuharu Yanagimoto
-      date: today
-      image: awesomecv/assets/img/thumbnail.svg
+    - author: Kazuharu Yanagimoto
+      image: img/typstcv_awesomecv.svg
       path: awesomecv/awesomecv.qmd
+      links:
+        - name: Code
+          url: https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/awesomecv/awesomecv.qmd
+          icon: fa-brands fa-github
+    - title: Kazuharu Yanagimoto's CV
+      author: Kazuharu Yanagimoto
+      image: img/cv_yanagimoto.svg
+      path: https://kazuyanagimoto.com/cv/cv.pdf
+      links:
+        - name: Code
+          url: https://github.com/kazuyanagimoto/cv
+          icon: fa-brands fa-github
+  template: listing.ejs
   sort: "date desc"
   type: grid
   sort-ui: false

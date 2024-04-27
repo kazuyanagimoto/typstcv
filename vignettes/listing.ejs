@@ -7,12 +7,21 @@
         </div>
         <div class="body">
             <p class="title listing-title"><a href="<%- item.path %>"><%= item.title %></a></p>
+            <% if (item.categories) { %>
+            <div class="item-categories listing-categories">
+                <% for (const category of item.categories) { %>
+                <div class="item-category listing-category" onclick="window.quartoListingCategory('<%=category%>'); return false;">
+                    <%= category %>
+                </div>
+                <% } %>
+            </div>
+            <% } %>
             <p class="author listing-author"><%= item.author %></p>
             <p class="description listing-description"><%= item.description %></p>
-            <ul class="slides-links">
+            <ul class="item-links">
                 <% if (item.links) { %>
                     <% for (const link of item.links) { %>
-                    <li class="slides-link">
+                    <li class="item-link">
                         <% if (link.local) { %>
                         <a href="<%- item.path.substring(0, item.path.lastIndexOf('/')) %>/<%- link.url %>">
                         <% } else { %>
@@ -25,11 +34,14 @@
                 <% } %>
             </ul>
         </div>
-        <% if (item.url) { %>
         <div class="thumbnail">
-            <iframe class="slide-deck" src="<%= item.url %>"></iframe>
+            <% if (item.url) { %>
+            <a href="<%= item.url %>" target="_blank"><img src="<%= item.image %>" alt="<%= item.title %>" title="<%= item.title %>" /></a>
+            <% } else { %>
+            <img src="<%= item.image %>" alt="<%= item.title %>" title="<%= item.title %>" />
+            <% } %>
         </div>
-        <% } %>
+        
     </div>
     <% } %>
 </div>
