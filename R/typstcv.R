@@ -5,6 +5,7 @@
 #' @param location The column name for the location. Default is "location"
 #' @param date The column name for the date. Default is "date"
 #' @param description The column name for the description. Default is "description"
+#' @param details The column name for additional details. Default is NULL
 #'
 #' @return A string with the resume entry
 #' @export
@@ -23,7 +24,8 @@ resume_entry <- function(data,
                          title = "title",
                          location = "location",
                          date = "date",
-                         description = "description") {
+                         description = "description",
+                         details = NULL) {
   strings <- apply(data, 1, function(row) {
     s <- "#resume-entry("
     if (!is.na(row[title])) {
@@ -39,6 +41,11 @@ resume_entry <- function(data,
       s <- sprintf("%sdescription: \"%s\",", s, row[description])
     }
     s <- paste0(s, ")")
+
+    if (!is.null(details)) {
+      s <- paste0(s, "\n#resume-item[\n", paste0("- ", row[details], collapse = "\n"), "\n]")
+    }
+
     return(s)
   })
 

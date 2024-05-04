@@ -11,3 +11,4 @@
 ^README\.qmd$
 ^README\.html$
 README_files/*
+^.vscode$

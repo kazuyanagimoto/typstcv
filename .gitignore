@@ -9,3 +9,4 @@ docs/
 *_files/
 README.html
 *.pdf
+.vscode/

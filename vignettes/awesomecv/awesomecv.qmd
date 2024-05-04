@@ -37,6 +37,7 @@ execute:
 library(typstcv)
 ```
 
+
 ## Education
 
 ```{r}
@@ -65,7 +66,8 @@ work |>
 
 ```{r}
 #| output: asis
-resume_entry(award)
+resume_entry(award, details = c("detail1", "detail2"))
+#resume_entry(award, details = grep("^detail", names(award)))
 ```
 
 ## Skills

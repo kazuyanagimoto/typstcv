@@ -9,7 +9,8 @@ resume_entry(
   title = "title",
   location = "location",
   date = "date",
-  description = "description"
+  description = "description",
+  details = NULL
 )
 }
 \arguments{
@@ -22,6 +23,8 @@ resume_entry(
 \item{date}{The column name for the date. Default is "date"}
 
 \item{description}{The column name for the description. Default is "description"}
+
+\item{details}{The column name for additional details. Default is NULL}
 }
 \value{
 A string with the resume entry

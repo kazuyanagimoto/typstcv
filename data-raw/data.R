@@ -24,7 +24,9 @@ award <- data.frame(
   title = c("Nobel Prize in Physics"),
   location = c("Stockholm, Sweden"),
   date = c("1921"),
-  description = c("For his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect.")
+  description = c("For his services to"),
+  detail1 = c("Theoretical Physics"),
+  detail2 = c("Discovery of the law of the photoelectric effect")
 )
 
 skill <- data.frame(
