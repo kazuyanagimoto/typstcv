@@ -333,6 +333,26 @@ The column name for additional details. Default is NULL
 #resume-entry(title: "Master of Science",location: "Zürich, Switzerland",date: "1896 - 1900",description: "ETH",)
 ```</code></pre>
 </div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># With details</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>award <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a> <span class="at">title =</span> <span class="fu">c</span>(<span class="st">"Nobel Prize in Physics"</span>),</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a> <span class="at">location =</span> <span class="fu">c</span>(<span class="st">"Stockholm, Sweden"</span>),</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a> <span class="at">date =</span> <span class="fu">c</span>(<span class="st">"1921"</span>),</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a> <span class="at">description =</span> <span class="fu">c</span>(<span class="st">"For his services to"</span>),</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a> <span class="at">detail1 =</span> <span class="fu">c</span>(<span class="st">"Theoretical Physics"</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a> <span class="at">detail2 =</span> <span class="fu">c</span>(<span class="st">"Discovery of the law of the photoelectric effect"</span>)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">resume_entry</span>(award, <span class="at">details =</span> <span class="fu">c</span>(<span class="st">"detail1"</span>, <span class="st">"detail2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>```{=typst}
+#resume-entry(title: "Nobel Prize in Physics",location: "Stockholm, Sweden",date: "1921",description: "For his services to",)
+#resume-item[
+- Theoretical Physics
+- Discovery of the law of the photoelectric effect
+]
+```</code></pre>
+</div>
 </div>
 
 
