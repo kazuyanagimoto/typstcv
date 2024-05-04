@@ -19,6 +19,18 @@
 #' )
 #'
 #' resume_entry(educ)
+#' 
+#' # With details
+#' award <- data.frame(
+#'  title = c("Nobel Prize in Physics"),
+#'  location = c("Stockholm, Sweden"),
+#'  date = c("1921"),
+#'  description = c("For his services to"),
+#'  detail1 = c("Theoretical Physics"),
+#'  detail2 = c("Discovery of the law of the photoelectric effect")
+#' )
+#' 
+#' resume_entry(award, details = c("detail1", "detail2"))
 #'
 resume_entry <- function(data,
                          title = "title",

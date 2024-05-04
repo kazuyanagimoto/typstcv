@@ -51,6 +51,8 @@ quarto use template kazuyanagimoto/quarto-awesomecv-typst
 
 ### YAML
 
+![](vignettes/img/awesomecv_header.svg)
+
 Set author information in YAML.
 
 ``` yaml
@@ -94,14 +96,23 @@ format:
 data frame.
 
 ``` r
+educ
+#>               title            location        date          description
+#> 1  Ph.D. in Physics Zürich, Switzerland        1905 University of Zürich
+#> 2 Master of Science Zürich, Switzerland 1896 - 1900                  ETH
+```
+
+``` r
 educ |>
   resume_entry(
     title = "title",
     location = "location",
-    date = "year",
-    description = "detail"
+    date = "date",
+    description = "description"
 )
 ```
+
+![](vignettes/img/awesomecv_educ.svg)
 
 You can add bullet points by `details` argument.
 
@@ -110,18 +121,34 @@ resume_entry(award, details = c("detail1", "detail2"))
 # resume_entry(award, details = grep("^detail", names(award)))
 ```
 
+![](vignettes/img/awesomecv_award.svg)
+
 ### Date Formatter
 
 `date_formatter()` is a helper function to format dates in the resume.
 
 ``` r
+work
+#>                 title            location      start        end
+#> 1 Technical Assistant   Bern, Switzerland 1902-01-01 1908-01-01
+#> 2    Junior Professor   Bern, Switzerland 1908-01-01 1909-01-01
+#> 3 Associate Professor Zürich, Switzerland 1909-01-01 1911-01-01
+#>             description
+#> 1 Federal Patent Office
+#> 2    University of Bern
+#> 3  University of Zürich
+```
+
+``` r
 work |>
   format_date(
-    start = "date_start",
-    end = "date_end",
+    start = "start",
+    end = "end",
     date_format = "%Y",
     sep = "->",
     sort_by = "start"
   ) |>
   resume_entry()
 ```
+
+![](vignettes/img/awesomecv_work.svg)

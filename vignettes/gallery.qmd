@@ -13,6 +13,7 @@ listing:
       author: Kazuharu Yanagimoto
       image: img/cv_yanagimoto.svg
       path: https://kazuyanagimoto.com/cv/cv.pdf
+      description: CSV Data + GitHub Actions
       links:
         - name: Code
           url: https://github.com/kazuyanagimoto/cv

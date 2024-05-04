@@ -42,6 +42,11 @@ You can find a simple [example](https://kazuyanagimoto.com/typstcv/vignettes/awe
 [qmd](https://github.com/kazuyanagimoto/typstcv/blob/main/vignettes/awesomecv/awesomecv.qmd)
 code.
 
+```{r}
+#| include: false
+library(typstcv)
+```
+
 ### Use Template
 
 You can use the template with `quarto` command.
@@ -51,6 +56,8 @@ quarto use template kazuyanagimoto/quarto-awesomecv-typst
 ```
 
 ### YAML
+
+![](vignettes/img/awesomecv_header.svg)
 
 Set author information in YAML.
 
@@ -91,15 +98,21 @@ format:
 
 `resume_entry()` is a helper function to create resume entryies from a data frame.
 
+```{r}
+educ
+```
+
 ```r
 educ |>
   resume_entry(
     title = "title",
     location = "location",
-    date = "year",
-    description = "detail"
+    date = "date",
+    description = "description"
 )
 ```
+
+![](vignettes/img/awesomecv_educ.svg)
 
 You can add bullet points by `details` argument.
 
@@ -108,18 +121,26 @@ resume_entry(award, details = c("detail1", "detail2"))
 # resume_entry(award, details = grep("^detail", names(award)))
 ```
 
+![](vignettes/img/awesomecv_award.svg)
+
 ### Date Formatter
 
 `date_formatter()` is a helper function to format dates in the resume.
 
+```{r}
+work
+```
+
 ```r
 work |>
   format_date(
-    start = "date_start",
-    end = "date_end",
+    start = "start",
+    end = "end",
     date_format = "%Y",
     sep = "->",
     sort_by = "start"
   ) |>
   resume_entry()
 ```
+
+![](vignettes/img/awesomecv_work.svg)
