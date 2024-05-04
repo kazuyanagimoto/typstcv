@@ -9,6 +9,7 @@ project:
 website:
   title: "$ALTDOC_PACKAGE_NAME"
   favicon: favicon.svg
+  twitter-card: true
   navbar:
     search: true
     right:
