@@ -14,6 +14,14 @@
 #' @export
 #'
 #' @examples
+#' work <- data.frame(
+#'   title = c("Technical Assistant", "Junior Professor", "Associate Professor"),
+#'   location = c("Bern, Switzerland", "Bern, Switzerland", "Zürich, Switzerland"),
+#'   start = as.Date(c("1902-01-01", "1908-01-01", "1909-01-01")),
+#'   end = as.Date(c("1908-01-01", "1909-01-01", "1911-01-01")),
+#'   description = c("Federal Patent Office", "University of Bern", "University of Zürich")
+#' )
+#' 
 #' work |>
 #'   format_date(end = "end", date_format = "%Y", sort_by = "start") |>
 #'   resume_entry()
@@ -29,6 +37,18 @@ format_date <- function(data,
                         sort_by = "none",
                         decreasing = TRUE) {
 
+  # Sort
+  if (sort_by == "start") {
+    data <- data[order(data[[start]], decreasing = decreasing), ]
+  } else if (sort_by == "end" && !is.null(end)) {
+    data <- data[order(data[[end]], decreasing = decreasing), ]
+  } else if (sort_by == "none") {
+    # Do nothing
+  } else {
+    stop("Invalid sort_by value. Use 'none', 'start' or 'end'")
+  }
+
+  # Format start date
   data[[start]] <- format(data[[start]], date_format)
   data[[start]][is.na(data[[start]])] <- replace_na
 
@@ -39,17 +59,6 @@ format_date <- function(data,
     data[[end]] <- format(data[[end]], date_format)
     data[[end]][is.na(data[[end]])] <- replace_na
     data[[colname_date]] <- paste(data[[start]], data[[end]], sep = sep)
-  }
-
-  # Sort
-  if (sort_by == "start") {
-    data <- data[order(data[[start]], decreasing = decreasing), ]
-  } else if (sort_by == "end" && !is.null(end)) {
-    data <- data[order(data[[end]], decreasing = decreasing), ]
-  } else if (sort_by == "none") {
-    # Do nothing
-  } else {
-    stop("Invalid sort_by value. Use 'none', 'start' or 'end'")
   }
 
   return(data)

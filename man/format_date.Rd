@@ -42,6 +42,14 @@ Data frame with formatted date column
 Data Column Formatter
 }
 \examples{
+work <- data.frame(
+  title = c("Technical Assistant", "Junior Professor", "Associate Professor"),
+  location = c("Bern, Switzerland", "Bern, Switzerland", "Zürich, Switzerland"),
+  start = as.Date(c("1902-01-01", "1908-01-01", "1909-01-01")),
+  end = as.Date(c("1908-01-01", "1909-01-01", "1911-01-01")),
+  description = c("Federal Patent Office", "University of Bern", "University of Zürich")
+)
+
 work |>
   format_date(end = "end", date_format = "\%Y", sort_by = "start") |>
   resume_entry()
