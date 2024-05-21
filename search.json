@@ -1,56 +1,34 @@
 [
   {
-    "objectID": "LICENSE.html",
-    "href": "LICENSE.html",
-    "title": "MIT License",
+    "objectID": "CITATION.html",
+    "href": "CITATION.html",
+    "title": "Citation",
     "section": "",
-    "text": "MIT License\nCopyright (c) 2024 typstcv authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\n  Yanagimoto K (????). _typstcv: CV for Quarto & Typst_. R package\n  version 0.0.2, https://kazuyanagimoto/typstcv/,\n  &lt;https://github.com/kazuyanagimoto/typstcv&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {typstcv: CV for Quarto & Typst},\n    author = {Kazuharu Yanagimoto},\n    note = {R package version 0.0.2, \nhttps://kazuyanagimoto/typstcv/},\n    url = {https://github.com/kazuyanagimoto/typstcv},\n  }",
     "crumbs": [
-      "License"
+      "Citation"
     ]
   },
   {
-    "objectID": "man/work.html",
-    "href": "man/work.html",
+    "objectID": "man/skill.html",
+    "href": "man/skill.html",
     "title": "typstcv",
     "section": "",
-    "text": "Example data: Work experience\n\n\n\nwork\n\n\n\n\n\nA dataframe of work experience\n\n\ntitle\n\n\nJob title\n\n\nlocation\n\n\nLocation of job\n\n\ndate\n\n\nDate of employment\n\n\ndescription\n\n\nEmployer\n\n\n\n\n\ndata-raw/data.R",
+    "text": "Example data: Skills\n\n\n\nskill\n\n\n\n\n\nA dataframe of skills\n\n\ntitle\n\n\nCategory of skill\n\n\ndescription\n\n\nList of skills\n\n\n\n\n\ndata-raw/data.R",
     "crumbs": [
       "Reference",
-      "work"
+      "skill"
     ]
   },
   {
-    "objectID": "man/work.html#example-data-work-experience",
-    "href": "man/work.html#example-data-work-experience",
+    "objectID": "man/skill.html#example-data-skills",
+    "href": "man/skill.html#example-data-skills",
     "title": "typstcv",
     "section": "",
-    "text": "Example data: Work experience\n\n\n\nwork\n\n\n\n\n\nA dataframe of work experience\n\n\ntitle\n\n\nJob title\n\n\nlocation\n\n\nLocation of job\n\n\ndate\n\n\nDate of employment\n\n\ndescription\n\n\nEmployer\n\n\n\n\n\ndata-raw/data.R",
+    "text": "Example data: Skills\n\n\n\nskill\n\n\n\n\n\nA dataframe of skills\n\n\ntitle\n\n\nCategory of skill\n\n\ndescription\n\n\nList of skills\n\n\n\n\n\ndata-raw/data.R",
     "crumbs": [
       "Reference",
-      "work"
-    ]
-  },
-  {
-    "objectID": "man/format_date.html",
-    "href": "man/format_date.html",
-    "title": "typstcv",
-    "section": "",
-    "text": "Data Column Formatter\n\n\n\nformat_date(\n  data,\n  start = \"start\",\n  end = NULL,\n  sep = \" - \",\n  date_format = \"%b %Y\",\n  colname_date = \"date\",\n  replace_na = \"Present\",\n  sort_by = \"none\",\n  decreasing = TRUE\n)\n\n\n\n\n\n\n\ndata\n\n\nData frame for resume entry\n\n\n\n\nstart\n\n\nStart date column name. Default is \"start\"\n\n\n\n\nend\n\n\nOptional. End date column name.\n\n\n\n\nsep\n\n\nSeparator between start and end date. Default is \" - \"\n\n\n\n\ndate_format\n\n\nDate format. Default is \"%B %Y\"\n\n\n\n\ncolname_date\n\n\nName for the generated date column. Default is \"date\"\n\n\n\n\nreplace_na\n\n\nValue to replace NA values. Default is \"Present\"\n\n\n\n\nsort_by\n\n\nSort by \"none\", \"start\" or \"end\". Default is \"none\"\n\n\n\n\ndecreasing\n\n\nSort in decreasing order. Default is TRUE\n\n\n\n\n\n\nData frame with formatted date column\n\n\n\n\nlibrary(typstcv)\n\nwork |&gt;\n  format_date(end = \"end\", date_format = \"%Y\", sort_by = \"start\") |&gt;\n  resume_entry()\n\n```{=typst}\n#resume-entry(title: \"Associate Professor\",location: \"Zürich, Switzerland\",date: \"1909 - 1911\",description: \"University of Zürich\",)\n#resume-entry(title: \"Junior Professor\",location: \"Bern, Switzerland\",date: \"1908 - 1909\",description: \"University of Bern\",)\n#resume-entry(title: \"Technical Assistant\",location: \"Bern, Switzerland\",date: \"1902 - 1908\",description: \"Federal Patent Office\",)\n```",
-    "crumbs": [
-      "Reference",
-      "format_date"
-    ]
-  },
-  {
-    "objectID": "man/format_date.html#data-column-formatter",
-    "href": "man/format_date.html#data-column-formatter",
-    "title": "typstcv",
-    "section": "",
-    "text": "Data Column Formatter\n\n\n\nformat_date(\n  data,\n  start = \"start\",\n  end = NULL,\n  sep = \" - \",\n  date_format = \"%b %Y\",\n  colname_date = \"date\",\n  replace_na = \"Present\",\n  sort_by = \"none\",\n  decreasing = TRUE\n)\n\n\n\n\n\n\n\ndata\n\n\nData frame for resume entry\n\n\n\n\nstart\n\n\nStart date column name. Default is \"start\"\n\n\n\n\nend\n\n\nOptional. End date column name.\n\n\n\n\nsep\n\n\nSeparator between start and end date. Default is \" - \"\n\n\n\n\ndate_format\n\n\nDate format. Default is \"%B %Y\"\n\n\n\n\ncolname_date\n\n\nName for the generated date column. Default is \"date\"\n\n\n\n\nreplace_na\n\n\nValue to replace NA values. Default is \"Present\"\n\n\n\n\nsort_by\n\n\nSort by \"none\", \"start\" or \"end\". Default is \"none\"\n\n\n\n\ndecreasing\n\n\nSort in decreasing order. Default is TRUE\n\n\n\n\n\n\nData frame with formatted date column\n\n\n\n\nlibrary(typstcv)\n\nwork |&gt;\n  format_date(end = \"end\", date_format = \"%Y\", sort_by = \"start\") |&gt;\n  resume_entry()\n\n```{=typst}\n#resume-entry(title: \"Associate Professor\",location: \"Zürich, Switzerland\",date: \"1909 - 1911\",description: \"University of Zürich\",)\n#resume-entry(title: \"Junior Professor\",location: \"Bern, Switzerland\",date: \"1908 - 1909\",description: \"University of Bern\",)\n#resume-entry(title: \"Technical Assistant\",location: \"Bern, Switzerland\",date: \"1902 - 1908\",description: \"Federal Patent Office\",)\n```",
-    "crumbs": [
-      "Reference",
-      "format_date"
+      "skill"
     ]
   },
   {
@@ -98,6 +76,46 @@
     ]
   },
   {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "MIT License",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2024 typstcv authors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+    "crumbs": [
+      "License"
+    ]
+  },
+  {
+    "objectID": "NEWS.html",
+    "href": "NEWS.html",
+    "title": "typstcv",
+    "section": "",
+    "text": "Bug Fixes:\n\nformat_date() now correctly sorts after the formatting step. This was causing the dates to be sorted as strings, rather than as dates.",
+    "crumbs": [
+      "News"
+    ]
+  },
+  {
+    "objectID": "NEWS.html#section",
+    "href": "NEWS.html#section",
+    "title": "typstcv",
+    "section": "",
+    "text": "Bug Fixes:\n\nformat_date() now correctly sorts after the formatting step. This was causing the dates to be sorted as strings, rather than as dates.",
+    "crumbs": [
+      "News"
+    ]
+  },
+  {
+    "objectID": "NEWS.html#section-1",
+    "href": "NEWS.html#section-1",
+    "title": "typstcv",
+    "section": "0.0.1",
+    "text": "0.0.1\n\nInitial GitHub submission",
+    "crumbs": [
+      "News"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "typstcv",
@@ -128,57 +146,47 @@
     ]
   },
   {
-    "objectID": "vignettes/gallery.html",
-    "href": "vignettes/gallery.html",
-    "title": "Gallery",
+    "objectID": "man/work.html",
+    "href": "man/work.html",
+    "title": "typstcv",
     "section": "",
-    "text": "Albert Einstein's CV\n            \n            Kazuharu Yanagimoto\n            \n            \n                \n                    \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                    \n                \n            \n        \n        \n            \n            \n            \n        \n        \n    \n    \n    \n                  \n            \n        \n        \n            Kazuharu Yanagimoto's CV\n            \n            Kazuharu Yanagimoto\n            CSV Data + GitHub Actions\n            \n                \n                    \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                    \n                \n            \n        \n        \n            \n            \n            \n        \n        \n    \n    \n\n\nNo matching items",
+    "text": "Example data: Work experience\n\n\n\nwork\n\n\n\n\n\nA dataframe of work experience\n\n\ntitle\n\n\nJob title\n\n\nlocation\n\n\nLocation of job\n\n\ndate\n\n\nDate of employment\n\n\ndescription\n\n\nEmployer\n\n\n\n\n\ndata-raw/data.R",
     "crumbs": [
-      "Gallery"
+      "Reference",
+      "work"
     ]
   },
   {
-    "objectID": "man/skill.html",
-    "href": "man/skill.html",
+    "objectID": "man/work.html#example-data-work-experience",
+    "href": "man/work.html#example-data-work-experience",
     "title": "typstcv",
     "section": "",
-    "text": "Example data: Skills\n\n\n\nskill\n\n\n\n\n\nA dataframe of skills\n\n\ntitle\n\n\nCategory of skill\n\n\ndescription\n\n\nList of skills\n\n\n\n\n\ndata-raw/data.R",
+    "text": "Example data: Work experience\n\n\n\nwork\n\n\n\n\n\nA dataframe of work experience\n\n\ntitle\n\n\nJob title\n\n\nlocation\n\n\nLocation of job\n\n\ndate\n\n\nDate of employment\n\n\ndescription\n\n\nEmployer\n\n\n\n\n\ndata-raw/data.R",
     "crumbs": [
       "Reference",
-      "skill"
+      "work"
     ]
   },
   {
-    "objectID": "man/skill.html#example-data-skills",
-    "href": "man/skill.html#example-data-skills",
+    "objectID": "man/format_date.html",
+    "href": "man/format_date.html",
     "title": "typstcv",
     "section": "",
-    "text": "Example data: Skills\n\n\n\nskill\n\n\n\n\n\nA dataframe of skills\n\n\ntitle\n\n\nCategory of skill\n\n\ndescription\n\n\nList of skills\n\n\n\n\n\ndata-raw/data.R",
+    "text": "Data Column Formatter\n\n\n\nformat_date(\n  data,\n  start = \"start\",\n  end = NULL,\n  sep = \" - \",\n  date_format = \"%b %Y\",\n  colname_date = \"date\",\n  replace_na = \"Present\",\n  sort_by = \"none\",\n  decreasing = TRUE\n)\n\n\n\n\n\n\n\ndata\n\n\nData frame for resume entry\n\n\n\n\nstart\n\n\nStart date column name. Default is \"start\"\n\n\n\n\nend\n\n\nOptional. End date column name.\n\n\n\n\nsep\n\n\nSeparator between start and end date. Default is \" - \"\n\n\n\n\ndate_format\n\n\nDate format. Default is \"%B %Y\"\n\n\n\n\ncolname_date\n\n\nName for the generated date column. Default is \"date\"\n\n\n\n\nreplace_na\n\n\nValue to replace NA values. Default is \"Present\"\n\n\n\n\nsort_by\n\n\nSort by \"none\", \"start\" or \"end\". Default is \"none\"\n\n\n\n\ndecreasing\n\n\nSort in decreasing order. Default is TRUE\n\n\n\n\n\n\nData frame with formatted date column\n\n\n\n\nlibrary(typstcv)\n\nwork &lt;- data.frame(\n  title = c(\"Technical Assistant\", \"Junior Professor\", \"Associate Professor\"),\n  location = c(\"Bern, Switzerland\", \"Bern, Switzerland\", \"Zürich, Switzerland\"),\n  start = as.Date(c(\"1902-01-01\", \"1908-01-01\", \"1909-01-01\")),\n  end = as.Date(c(\"1908-01-01\", \"1909-01-01\", \"1911-01-01\")),\n  description = c(\"Federal Patent Office\", \"University of Bern\", \"University of Zürich\")\n)\n\nwork |&gt;\n  format_date(end = \"end\", date_format = \"%Y\", sort_by = \"start\") |&gt;\n  resume_entry()\n\n```{=typst}\n#resume-entry(title: \"Associate Professor\",location: \"Zürich, Switzerland\",date: \"1909 - 1911\",description: \"University of Zürich\",)\n#resume-entry(title: \"Junior Professor\",location: \"Bern, Switzerland\",date: \"1908 - 1909\",description: \"University of Bern\",)\n#resume-entry(title: \"Technical Assistant\",location: \"Bern, Switzerland\",date: \"1902 - 1908\",description: \"Federal Patent Office\",)\n```",
     "crumbs": [
       "Reference",
-      "skill"
+      "format_date"
     ]
   },
   {
-    "objectID": "man/award.html",
-    "href": "man/award.html",
+    "objectID": "man/format_date.html#data-column-formatter",
+    "href": "man/format_date.html#data-column-formatter",
     "title": "typstcv",
     "section": "",
-    "text": "Example data: Awards\n\n\n\naward\n\n\n\n\n\nA dataframe of awards\n\n\ntitle\n\n\nTitle of award\n\n\nlocation\n\n\nLocation of award\n\n\ndate\n\n\nDate of award\n\n\ndescription\n\n\nDescription of award\n\n\n\n\n\ndata-raw/data.R",
+    "text": "Data Column Formatter\n\n\n\nformat_date(\n  data,\n  start = \"start\",\n  end = NULL,\n  sep = \" - \",\n  date_format = \"%b %Y\",\n  colname_date = \"date\",\n  replace_na = \"Present\",\n  sort_by = \"none\",\n  decreasing = TRUE\n)\n\n\n\n\n\n\n\ndata\n\n\nData frame for resume entry\n\n\n\n\nstart\n\n\nStart date column name. Default is \"start\"\n\n\n\n\nend\n\n\nOptional. End date column name.\n\n\n\n\nsep\n\n\nSeparator between start and end date. Default is \" - \"\n\n\n\n\ndate_format\n\n\nDate format. Default is \"%B %Y\"\n\n\n\n\ncolname_date\n\n\nName for the generated date column. Default is \"date\"\n\n\n\n\nreplace_na\n\n\nValue to replace NA values. Default is \"Present\"\n\n\n\n\nsort_by\n\n\nSort by \"none\", \"start\" or \"end\". Default is \"none\"\n\n\n\n\ndecreasing\n\n\nSort in decreasing order. Default is TRUE\n\n\n\n\n\n\nData frame with formatted date column\n\n\n\n\nlibrary(typstcv)\n\nwork &lt;- data.frame(\n  title = c(\"Technical Assistant\", \"Junior Professor\", \"Associate Professor\"),\n  location = c(\"Bern, Switzerland\", \"Bern, Switzerland\", \"Zürich, Switzerland\"),\n  start = as.Date(c(\"1902-01-01\", \"1908-01-01\", \"1909-01-01\")),\n  end = as.Date(c(\"1908-01-01\", \"1909-01-01\", \"1911-01-01\")),\n  description = c(\"Federal Patent Office\", \"University of Bern\", \"University of Zürich\")\n)\n\nwork |&gt;\n  format_date(end = \"end\", date_format = \"%Y\", sort_by = \"start\") |&gt;\n  resume_entry()\n\n```{=typst}\n#resume-entry(title: \"Associate Professor\",location: \"Zürich, Switzerland\",date: \"1909 - 1911\",description: \"University of Zürich\",)\n#resume-entry(title: \"Junior Professor\",location: \"Bern, Switzerland\",date: \"1908 - 1909\",description: \"University of Bern\",)\n#resume-entry(title: \"Technical Assistant\",location: \"Bern, Switzerland\",date: \"1902 - 1908\",description: \"Federal Patent Office\",)\n```",
     "crumbs": [
       "Reference",
-      "award"
-    ]
-  },
-  {
-    "objectID": "man/award.html#example-data-awards",
-    "href": "man/award.html#example-data-awards",
-    "title": "typstcv",
-    "section": "",
-    "text": "Example data: Awards\n\n\n\naward\n\n\n\n\n\nA dataframe of awards\n\n\ntitle\n\n\nTitle of award\n\n\nlocation\n\n\nLocation of award\n\n\ndate\n\n\nDate of award\n\n\ndescription\n\n\nDescription of award\n\n\n\n\n\ndata-raw/data.R",
-    "crumbs": [
-      "Reference",
-      "award"
+      "format_date"
     ]
   },
   {
@@ -204,13 +212,35 @@
     ]
   },
   {
-    "objectID": "CITATION.html",
-    "href": "CITATION.html",
-    "title": "Citation",
+    "objectID": "man/award.html",
+    "href": "man/award.html",
+    "title": "typstcv",
     "section": "",
-    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\n  Yanagimoto K (????). _typstcv: CV for Quarto & Typst_. R package\n  version 0.0.1, https://kazuyanagimoto/typstcv/,\n  &lt;https://github.com/kazuyanagimoto/typstcv&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {typstcv: CV for Quarto & Typst},\n    author = {Kazuharu Yanagimoto},\n    note = {R package version 0.0.1, \nhttps://kazuyanagimoto/typstcv/},\n    url = {https://github.com/kazuyanagimoto/typstcv},\n  }",
+    "text": "Example data: Awards\n\n\n\naward\n\n\n\n\n\nA dataframe of awards\n\n\ntitle\n\n\nTitle of award\n\n\nlocation\n\n\nLocation of award\n\n\ndate\n\n\nDate of award\n\n\ndescription\n\n\nDescription of award\n\n\n\n\n\ndata-raw/data.R",
     "crumbs": [
-      "Citation"
+      "Reference",
+      "award"
+    ]
+  },
+  {
+    "objectID": "man/award.html#example-data-awards",
+    "href": "man/award.html#example-data-awards",
+    "title": "typstcv",
+    "section": "",
+    "text": "Example data: Awards\n\n\n\naward\n\n\n\n\n\nA dataframe of awards\n\n\ntitle\n\n\nTitle of award\n\n\nlocation\n\n\nLocation of award\n\n\ndate\n\n\nDate of award\n\n\ndescription\n\n\nDescription of award\n\n\n\n\n\ndata-raw/data.R",
+    "crumbs": [
+      "Reference",
+      "award"
+    ]
+  },
+  {
+    "objectID": "vignettes/gallery.html",
+    "href": "vignettes/gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "Albert Einstein's CV\n            \n            Kazuharu Yanagimoto\n            \n            \n                \n                    \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                    \n                \n            \n        \n        \n            \n            \n            \n        \n        \n    \n    \n    \n                  \n            \n        \n        \n            Kazuharu Yanagimoto's CV\n            \n            Kazuharu Yanagimoto\n            CSV Data + GitHub Actions\n            \n                \n                    \n                    \n                        \n                        \n                        \n                             Code\n                        \n                    \n                    \n                \n            \n        \n        \n            \n            \n            \n        \n        \n    \n    \n\n\nNo matching items",
+    "crumbs": [
+      "Gallery"
     ]
   }
 ]
