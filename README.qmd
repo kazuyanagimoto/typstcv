@@ -94,6 +94,15 @@ format:
     font-paths: ["PATH_TO_FONT"]
 ```
 
+### Profile Photo
+
+You can set a profile photo in YAML.
+If you set it, the header will be left-aligned.
+
+```yaml
+profile-photo: "PATH_TO_PHOTO/photo.jpg"
+```
+
 ### Resume Entries
 
 `resume_entry()` is a helper function to create resume entryies from a data frame.
