@@ -1,6 +1,6 @@
 
 
-# typstcv
+# [typstcv](https://kazuyanagimoto.com/typstcv/)
 
 <!-- badges: start -->
 
