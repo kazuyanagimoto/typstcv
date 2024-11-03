@@ -55,7 +55,7 @@ resume_entry <- function(data,
     s <- paste0(s, ")")
 
     if (!is.null(details)) {
-      s <- paste0(s, "\n#resume-item[\n", paste0("- ", row[details], collapse = "\n"), "\n]")
+      s <- paste0(s, "\n#resume-item[\n", paste0("- ", row[details][!is.na(row[details])], collapse = "\n"), "\n]")
     }
 
     return(s)
