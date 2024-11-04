@@ -39,9 +39,9 @@ format_date <- function(data,
 
   # Sort
   if (sort_by == "start") {
-    data <- data[order(data[[start]], decreasing = decreasing), ]
+    data <- data[order(data[[start]], na.last = !decreasing, decreasing = decreasing), ]
   } else if (sort_by == "end" && !is.null(end)) {
-    data <- data[order(data[[end]], decreasing = decreasing), ]
+    data <- data[order(data[[end]], na.last = !decreasing, decreasing = decreasing), ]
   } else if (sort_by == "none") {
     # Do nothing
   } else {
