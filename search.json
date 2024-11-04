@@ -4,7 +4,7 @@
     "href": "NEWS.html",
     "title": "typstcv",
     "section": "",
-    "text": "Bug Fixes:\n\nformat_date() now correctly sorts after the formatting step. This was causing the dates to be sorted as strings, rather than as dates.\nAllows resume_entry() for NA values in the details column. Thanks to @ryanzomorrodi for code submission #2.",
+    "text": "Bug Fixes:\n\nformat_date() now correctly sorts after the formatting step. This was causing the dates to be sorted as strings, rather than as dates.\nAllows resume_entry() for NA values in the details column. Thanks to @ryanzomorrodi for code submission #2.\nformat_date() correctly handles NA values as the latest date. Thanks to @ryanzomorrodi for code submission #3.",
     "crumbs": [
       "News"
     ]
@@ -14,7 +14,7 @@
     "href": "NEWS.html#section",
     "title": "typstcv",
     "section": "",
-    "text": "Bug Fixes:\n\nformat_date() now correctly sorts after the formatting step. This was causing the dates to be sorted as strings, rather than as dates.\nAllows resume_entry() for NA values in the details column. Thanks to @ryanzomorrodi for code submission #2.",
+    "text": "Bug Fixes:\n\nformat_date() now correctly sorts after the formatting step. This was causing the dates to be sorted as strings, rather than as dates.\nAllows resume_entry() for NA values in the details column. Thanks to @ryanzomorrodi for code submission #2.\nformat_date() correctly handles NA values as the latest date. Thanks to @ryanzomorrodi for code submission #3.",
     "crumbs": [
       "News"
     ]
@@ -198,7 +198,7 @@
     "href": "CITATION.html",
     "title": "Citation",
     "section": "",
-    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\nYanagimoto K (????). typstcv: CV for Quarto & Typst. R package version 0.0.2.1, https://kazuyanagimoto/typstcv/, https://github.com/kazuyanagimoto/typstcv.",
+    "text": "Citation\nTo cite package ‘typstcv’ in publications use:\n\nYanagimoto K (????). typstcv: CV for Quarto & Typst. R package version 0.0.2.2, https://kazuyanagimoto/typstcv/, https://github.com/kazuyanagimoto/typstcv.",
     "crumbs": [
       "Citation"
     ]
