@@ -19,7 +19,7 @@
 #' )
 #'
 #' resume_entry(educ)
-#' 
+#'
 #' # With details
 #' award <- data.frame(
 #'  title = c("Nobel Prize in Physics"),
@@ -29,15 +29,17 @@
 #'  detail1 = c("Theoretical Physics"),
 #'  detail2 = c("Discovery of the law of the photoelectric effect")
 #' )
-#' 
+#'
 #' resume_entry(award, details = c("detail1", "detail2"))
 #'
-resume_entry <- function(data,
-                         title = "title",
-                         location = "location",
-                         date = "date",
-                         description = "description",
-                         details = NULL) {
+resume_entry <- function(
+  data,
+  title = "title",
+  location = "location",
+  date = "date",
+  description = "description",
+  details = NULL
+) {
   strings <- apply(data, 1, function(row) {
     s <- "#resume-entry("
     if (!is.na(row[title])) {
@@ -55,7 +57,14 @@ resume_entry <- function(data,
     s <- paste0(s, ")")
 
     if (!is.null(details)) {
-      s <- paste0(s, "\n#resume-item[\n", paste0("- ", row[details][!is.na(row[details])], collapse = "\n"), "\n]")
+      if (any(!is.na(row[details]))) {
+        s <- paste0(
+          s,
+          "\n#resume-item[\n",
+          paste0("- ", row[details][!is.na(row[details])], collapse = "\n"),
+          "\n]"
+        )
+      }
     }
 
     return(s)
