@@ -339,8 +339,8 @@ The column name for additional details. Default is NULL
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">resume_entry</span>(educ)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>```{=typst}
-#resume-entry(title: "Ph.D. in Physics",location: "Zürich, Switzerland",date: "1905",description: "University of Zürich",)
-#resume-entry(title: "Master of Science",location: "Zürich, Switzerland",date: "1896 - 1900",description: "ETH",)
+#resume-entry(title: [Ph.D. in Physics],location: [Zürich, Switzerland],date: [1905],description: [University of Zürich],)
+#resume-entry(title: [Master of Science],location: [Zürich, Switzerland],date: [1896 - 1900],description: [ETH],)
 ```</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># With details</span></span>
@@ -356,7 +356,7 @@ The column name for additional details. Default is NULL
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="fu">resume_entry</span>(award, <span class="at">details =</span> <span class="fu">c</span>(<span class="st">"detail1"</span>, <span class="st">"detail2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>```{=typst}
-#resume-entry(title: "Nobel Prize in Physics",location: "Stockholm, Sweden",date: "1921",description: "For his services to",)
+#resume-entry(title: [Nobel Prize in Physics],location: [Stockholm, Sweden],date: [1921],description: [For his services to],)
 #resume-item[
 - Theoretical Physics
 - Discovery of the law of the photoelectric effect
