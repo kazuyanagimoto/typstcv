@@ -43,16 +43,16 @@ resume_entry <- function(
   strings <- apply(data, 1, function(row) {
     s <- "#resume-entry("
     if (!is.na(row[title])) {
-      s <- sprintf("%stitle: \"%s\",", s, row[title])
+      s <- sprintf("%stitle: [%s],", s, row[title])
     }
     if (!is.na(row[location])) {
-      s <- sprintf("%slocation: \"%s\",", s, row[location])
+      s <- sprintf("%slocation: [%s],", s, row[location])
     }
     if (!is.na(row[date])) {
-      s <- sprintf("%sdate: \"%s\",", s, row[date])
+      s <- sprintf("%sdate: [%s],", s, row[date])
     }
     if (!is.na(row[description])) {
-      s <- sprintf("%sdescription: \"%s\",", s, row[description])
+      s <- sprintf("%sdescription: [%s],", s, row[description])
     }
     s <- paste0(s, ")")
 
