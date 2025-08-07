@@ -10,3 +10,6 @@ docs/
 README.html
 *.pdf
 .vscode/
+air.toml
+.DS_Store
+/.quarto/

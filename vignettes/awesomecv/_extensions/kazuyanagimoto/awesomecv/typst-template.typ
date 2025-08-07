@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.1.0": *
+#import "@preview/fontawesome:0.5.0": *
 
 //------------------------------------------------------------------------------
 // Style
@@ -23,6 +23,11 @@ $if(style.color-accent)$
 $else$
 #let color-accent = color-accent-default
 $endif$
+$if(style.color-link)$
+#let color-link = rgb("$style.color-link$")
+$else$
+#let color-link = color-darknight
+$endif$
 $if(style.font-header)$
 #let font-header = "$style.font-header$"
 $else$
@@ -46,7 +51,7 @@ $endif$
     #if parts.len() == 2 {
       fa-icon(parts.at(1), fill: color-darknight)
     } else if parts.len() == 3 and parts.at(1) == "brands" {
-      fa-icon(parts.at(2), fa-set: "Brands", fill: color-darknight)
+      fa-icon(parts.at(2), font: "Font Awesome 6 Brands", fill: color-darknight)
     } else {
       assert(false, "Invalid fontawesome icon string")
     }
@@ -336,6 +341,32 @@ $endif$
 }
 
 //------------------------------------------------------------------------------
+// Data to Resume Entries
+//------------------------------------------------------------------------------
+
+#let data-to-resume-entries(
+  data: (),
+) = {
+  let arr = if type(data) == dictionary { data.values() } else { data }
+  for item in arr [
+    #resume-entry(
+      title: if "title" in item { item.title } else { none },
+      location: if "location" in item { item.location } else { none },
+      date: if "date" in  item { item.date } else { none },
+      description: if "description" in item { item.description } else { none }
+    )
+    #if "details" in item {
+      resume-item[
+        #for detail in item.details [
+          - #detail
+        ]
+      ]
+    }
+  ]
+}
+
+
+//------------------------------------------------------------------------------
 // Resume Template
 //------------------------------------------------------------------------------
 
@@ -362,7 +393,7 @@ $endif$
   set page(
     paper: "a4",
     margin: (left: 15mm, right: 15mm, top: 10mm, bottom: 10mm),
-    footer: [
+    footer: context [
       #set text(
         fill: gray,
         size: 8pt,
@@ -423,6 +454,9 @@ $endif$
     smallcaps[#it.body]
   }
   
+  // Other settings
+  show link: set text(fill: color-link)
+
   // Contents
   create-header(firstname: author.firstname,
                 lastname: author.lastname,

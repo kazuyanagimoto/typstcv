@@ -1,7 +1,7 @@
 Package: typstcv
 Type: Package
 Title: CV for Quarto & Typst
-Version: 0.0.2.2
+Version: 0.0.2.3
 Authors@R: 
     person(given = "Kazuharu",
            family = "Yanagimoto",
