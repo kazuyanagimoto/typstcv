@@ -12,3 +12,7 @@
 ^README\.html$
 README_files/*
 ^.vscode$
+^\.DS_Store$
+^\.Rhistory$
+^\.RData$
+^air\.toml$
